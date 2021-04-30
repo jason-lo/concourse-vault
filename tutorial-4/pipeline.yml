@@ -3,7 +3,7 @@ resources:
   - name: demo-repo
     type: git
     source:
-      uri: https://github.com/michaellihs/concourse-demo.git
+      uri: https://github.com/fourdollars/concourse-demo.git
       branch: master
   - name: busy-box
     type: docker-image
@@ -18,4 +18,4 @@ jobs:
         image: busy-box
         file: demo-repo/tutorial-4/hello-params.yml
         params:
-          GREETING: "hello parameters"
+          GREETING: "hello parameters (hojia)"
