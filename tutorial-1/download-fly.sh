@@ -2,7 +2,7 @@
 
 concourse_fqdn='localhost'
 
-curl --noproxy ${concourse_fqdn} -s -f -o ../fly "http://${concourse_fqdn}:8080/api/v1/cli?arch=amd64&platform=darwin"
+curl --noproxy ${concourse_fqdn} -s -f -o ../fly "http://${concourse_fqdn}:8080/api/v1/cli?arch=amd64&platform=linux"
 chmod u+x ../fly
 
 ../fly --target=demo login \
