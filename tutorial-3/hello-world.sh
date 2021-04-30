@@ -2,4 +2,4 @@
 
 # ^^ remember: we are in busybox --> we don't have bash or env...
 
-echo "Hello World"
+echo "Hello https://tossug.net"
