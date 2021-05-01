@@ -3,7 +3,7 @@ resources:
   - name: demo-repo
     type: git
     source:
-      uri: https://github.com/michaellihs/concourse-demo.git
+      uri: https://github.com/fourdollars/concourse-demo.git
       branch: master
   - name: ubuntu
     type: docker-image

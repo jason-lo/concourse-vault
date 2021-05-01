@@ -10,7 +10,7 @@ concourse_fqdn='localhost'
 
 ../fly --target=demo set-pipeline \
     --non-interactive \
-    --pipeline="meta (tutorial-8)" \
+    --pipeline="tutorial-8" \
     --config=pipeline.yml
 
-../fly --target=demo unpause-pipeline -p "meta (tutorial-8)"
+../fly --target=demo unpause-pipeline -p "tutorial-8"
