@@ -60,3 +60,10 @@ services:
       - ./vault/vault-certs:/vault/certs
       - ./vault/vault-config:/vault/config
     command: server
+
+  # see https://docs.docker.com/registry/
+  registry:
+    image: registry:2
+    ports: ["5000:5000"]
+    environment:
+      REGISTRY_HTTP_ADDR: 0.0.0.0:5000

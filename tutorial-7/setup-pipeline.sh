@@ -12,9 +12,7 @@ cleanup() {
 CONCOURSE_FQDN="localhost"
 CONCOURSE_USER="test"
 CONCOURSE_PASSWORD="test"
-DOCKER_REPO=michaellihs
-DOCKER_USER=michaellihs
-DOCKER_PASSWORD=${DOCKER_PASSWORD}
+DOCKER_REPO=registry:5000
 
 PIPELINE_NAME='tutorial-7'
 
@@ -22,8 +20,6 @@ trap cleanup INT TERM QUIT EXIT
 
 cat <<EOF > ${vars_file}
 docker_repo: ${DOCKER_REPO}
-docker_user: ${DOCKER_USER}
-docker_password: ${DOCKER_PASSWORD}
 EOF
 
 ../fly --target=demo login \
