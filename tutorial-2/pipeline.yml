@@ -7,8 +7,10 @@ jobs:
           platform: linux
           image_resource:
             type: docker-image
-            source: {repository: busybox}
+            source: {repository: perl, tag: slim-threaded-stretch}
           run:
-            path: echo
+            path: perl
             args:
-              - hello world
+              - -e
+              - print 'hello world\n';
+              - exit 1;

@@ -10,5 +10,6 @@ jobs:
   - name: hello-world
     plan:
       - get: demo-repo
+        trigger: true
       - task: hello-world
         file: demo-repo/tutorial-3/hello-world.yml

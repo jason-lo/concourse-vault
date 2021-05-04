@@ -13,6 +13,7 @@ jobs:
   - name: repipe-the-world
     plan:
       - get: demo-repo
+        trigger: true
       - get: ubuntu
       - task: repipe-the-world
         image: ubuntu
