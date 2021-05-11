@@ -5,6 +5,7 @@ resources:
     source:
       uri: https://github.com/fourdollars/concourse-demo.git
       branch: master
+    check_every: 30m
 
 jobs:
   - name: hello-world

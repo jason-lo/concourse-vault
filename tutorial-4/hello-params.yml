@@ -5,7 +5,8 @@ inputs:
   - name: demo-repo
 
 params:
-  GREETING:
+  GREETING: hello
+  WORLD: kitty
 
 run:
   path: demo-repo/tutorial-4/hello-params.sh
