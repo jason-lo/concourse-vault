@@ -59,6 +59,7 @@ services:
     volumes:
       - ./vault/vault-certs:/vault/certs
       - ./vault/vault-config:/vault/config
+      - ./vault/file:/vault/file
     command: server
 
   # see https://docs.docker.com/registry/
